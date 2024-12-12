@@ -23,7 +23,7 @@
 
 ## 📹 Data Preparation
 1. **Select Your Video**  
-   - Choose a video (e.g., a personal recording) that you want to convert into a 3D model.  
+   - Choose a **random video** (e.g., a personal recording) that you want to convert into a 3D model.  
 
 2. **Clone the Repository**  
    - Clone the 3D Gaussian Splatting repository from GitHub using the following command:  
@@ -36,15 +36,15 @@
      ```
 
 3. **Place the Video in the Directory**  
-   - Place your video file inside the `gaussian-splatting` folder.  
+   - Place your video file (for example, **my_random_video.mp4**) inside the `gaussian-splatting` folder.  
 
 4. **Create a Folder and Extract Frames**  
    - Create a folder named **test** inside the `gaussian-splatting` directory.  
    - Run the following **FFmpeg** command to extract frames from the video:  
      ```bash
-     ffmpeg -i vid2.mp4 -qscale:v 1 -qmin 1 -vf fps=10 test/%04d.jpg
+     ffmpeg -i your_video_name.mp4 -qscale:v 1 -qmin 1 -vf fps=10 test/%04d.jpg
      ```
-     This command extracts frames from the video at 10 frames per second and saves them as high-quality images in the **test** folder.  
+     **Note**: Replace `your_video_name.mp4` with the name of your video file. This command extracts frames from the video at 10 frames per second and saves them as high-quality images in the **test** folder.  
 
 5. **Organize and Prepare the Images**  
    - Select all the extracted images from the **test** folder.  
