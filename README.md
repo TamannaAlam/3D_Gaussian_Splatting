@@ -19,11 +19,6 @@
    - Set the system path for COLMAP using the *Edit system environment variables* option.  
    - This allows you to run COLMAP from the command line.
 
-3. **ImageMagick Installation**  
-   - Download **ImageMagick** from [the official website](https://imagemagick.org/script/download.php), or use the installer you've uploaded.  
-   - Run the installer (`ImageMagick-7.1.1-41-Q16-HDRI-x64-dll.exe`) and follow the setup instructions.  
-   - During installation, ensure that the option to add ImageMagick to your system path is selected, so you can run it from the command line.
-
 ---
 
 ## 📹 Data Preparation
